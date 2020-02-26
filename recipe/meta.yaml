@@ -1,13 +1,13 @@
 {% set name = "sentinelhub" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 3733145794d4e7ae0ddf3c284e4a307592d3ff49e76781995698e6a8fbd05d5b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 376981340f113484c774583eb6bc264155e0e95fabbd5b1bc62ee5be0e044e53
 
 build:
   noarch: python
@@ -17,8 +17,7 @@ build:
     - sentinelhub.aws=sentinelhub.commands:aws
     - sentinelhub.config=sentinelhub.commands:config
     - sentinelhub.download=sentinelhub.commands:download
-  script: "{{ PYTHON }} -m pip install . -vv"
-  
+  script: {{ PYTHON }} -m pip install . -vv
 requirements:
   host:
     - pip
@@ -54,13 +53,13 @@ test:
     - sentinelhub.download --help
 
 about:
-  home: "https://github.com/sentinel-hub/sentinelhub-py"
-  license: "CC-BY-SA-4.0"
-  license_family: "CC"
-  license_file: "LICENSE.md"
-  summary: "Sentinel Hub Utilities"
-  doc_url: "https://pypi.org/project/sentinelhub/"
-  dev_url: "https://github.com/sentinel-hub/sentinelhub-py"
+  home: https://github.com/sentinel-hub/sentinelhub-py
+  license: CC-BY-SA-4.0
+  license_family: CC
+  license_file: LICENSE.md
+  summary: Sentinel Hub Utilities
+  doc_url: https://pypi.org/project/sentinelhub/
+  dev_url: https://github.com/sentinel-hub/sentinelhub-py
 
 extra:
   recipe-maintainers:
