@@ -1,5 +1,5 @@
 {% set name = "sentinelhub" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d617c0d7389e52e3525f35c56c984983a7a8273109b3037dbd10d2a6fe0929e7
+  sha256: f3c63147db253c5fe1095af076decff184ab6831e961354ebca6f8b2e436cfa6
 
 build:
   noarch: python
