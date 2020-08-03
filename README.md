@@ -5,7 +5,7 @@ Home: https://github.com/sentinel-hub/sentinelhub-py
 
 Package license: CC-BY-SA-4.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Sentinel Hub Utilities
 
