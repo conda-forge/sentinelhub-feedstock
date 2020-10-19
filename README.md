@@ -5,11 +5,13 @@ Home: https://github.com/sentinel-hub/sentinelhub-py
 
 Package license: CC-BY-SA-4.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentinelhub-feedstock/blob/master/LICENSE.txt)
 
 Summary: Sentinel Hub Utilities
 
+Development: https://github.com/sentinel-hub/sentinelhub-py
 
+Documentation: https://pypi.org/project/sentinelhub/
 
 Current build status
 ====================
