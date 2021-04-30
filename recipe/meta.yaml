@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - sentinelhub=sentinelhub.commands:main_help
     - sentinelhub.aws=sentinelhub.commands:aws
@@ -65,7 +65,6 @@ extra:
   recipe-maintainers:
     - mxr-conda
     - mwilson8
-    - dcunn
     - oblute
     - rluria14
     - benhuff
