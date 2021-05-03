@@ -41,6 +41,7 @@ requirements:
     - tifffile
     - utm
     - wheel
+    - dataclasses-json
 
 test:
   imports:
