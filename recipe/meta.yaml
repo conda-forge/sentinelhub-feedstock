@@ -60,7 +60,7 @@ about:
   license_file: LICENSE.md
   summary: Sentinel Hub Utilities
   doc_url: https://pypi.org/project/sentinelhub/
-  dev_url: https://github.com/sentinel-hub/sentinelhub-py
+  dev_url: https://github.com/sentinel-hub/sentinelhub-py 
 
 extra:
   recipe-maintainers:
