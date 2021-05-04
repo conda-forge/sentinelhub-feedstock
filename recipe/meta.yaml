@@ -1,5 +1,5 @@
 {% set name = "sentinelhub" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e474e8c0d2d7fb211ba1818e702f97863ff1c697de8431f094f8d8a5d0832577
+  sha256: f0cf787666bafd6fda876f5a3c8b7f9d662195d596f36cc78ff0c093fd7b11d8
 
 build:
   noarch: python
@@ -41,6 +41,7 @@ requirements:
     - tifffile
     - utm
     - wheel
+    - dataclasses-json
 
 test:
   imports:
@@ -59,12 +60,11 @@ about:
   license_file: LICENSE.md
   summary: Sentinel Hub Utilities
   doc_url: https://pypi.org/project/sentinelhub/
-  dev_url: https://github.com/sentinel-hub/sentinelhub-py
+  dev_url: https://github.com/sentinel-hub/sentinelhub-py 
 
 extra:
   recipe-maintainers:
-    - mwilson8
-    - dcunn
     - oblute
     - rluria14
     - benhuff
+    - mxr-conda
