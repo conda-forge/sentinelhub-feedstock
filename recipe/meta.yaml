@@ -38,6 +38,7 @@ requirements:
     - requests-oauthlib
     - shapely
     - tifffile
+    - tqdm
     - utm
     - wheel
     - dataclasses-json
