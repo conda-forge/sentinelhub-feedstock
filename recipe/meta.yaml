@@ -1,5 +1,5 @@
 {% set name = "sentinelhub" %}
-{% set version = "3.3.2" %}
+{% set version = "3.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b876a0811f5f7a4f396e4f985f73a3ae34a7abb5690d01ecaf3c2bfb21fb77e1
-
+  sha256: 17486dc058f432c94ebaa906e8ae68c06def36a47655bba9c224bb1da45cdbff
 build:
   noarch: python
   number: 0
@@ -64,7 +63,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - oblute
-    - rluria14
-    - benhuff
+    - bubblyorca
     - mxr-conda
