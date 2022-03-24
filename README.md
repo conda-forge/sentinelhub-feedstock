@@ -5,7 +5,7 @@ Home: https://github.com/sentinel-hub/sentinelhub-py
 
 Package license: CC-BY-SA-4.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentinelhub-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentinelhub-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sentinel Hub Utilities
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8649&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sentinelhub-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8649&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sentinelhub-feedstock?branchName=main">
       </a>
     </td>
   </tr>
