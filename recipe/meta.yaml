@@ -64,5 +64,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - zigaluksic
     - bubblyorca
     - mxr-conda
