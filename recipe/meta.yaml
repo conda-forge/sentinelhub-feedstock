@@ -1,5 +1,5 @@
 {% set name = "sentinelhub" %}
-{% set version = "3.4.4" %}
+{% set version = "3.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,45 +7,46 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2976306f2a459431b7c7dfa81f364e997637fcc84335a15f49f8d71ab6fc5e94
+  sha256: cfe05b76644381ba070f7790aece0bdeca5eaa0263b2da7882076f73a60b74c4
 build:
   noarch: python
   number: 0
   entry_points:
     - sentinelhub=sentinelhub.commands:main_help
-    - sentinelhub.aws=sentinelhub.commands:aws
+    - sentinelhub.aws=sentinelhub.aws.commands:aws
     - sentinelhub.config=sentinelhub.commands:config
     - sentinelhub.download=sentinelhub.commands:download
   script: {{ PYTHON }} -m pip install . -vv
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.7
 
   run:
     - aenum >=2.1.4
-    - attrs >=18.2.0
     - boto3
     - botocore
     - click
     - numpy
     - oauthlib
-    - pillow
-    - pyproj
-    - python >=3.5
+    - pillow >=9.2.0
+    - pyproj >=2.2.0
+    - python >=3.7
     - python-dateutil
-    - requests
-    - requests-oauthlib
+    - requests >=2.27.0
+    - requests-oauthlib >=1.0.0
     - shapely
-    - tifffile
+    - shared-memory38  # [py<38]
+    - tifffile >=2020.9.30
     - tqdm
+    - typing-extensions  # [py<311]
     - utm
-    - wheel
     - dataclasses-json
 
 test:
   imports:
     - sentinelhub
+    - sentinelhub.aws
     - sentinelhub.download
   commands:
     - sentinelhub --help
@@ -66,3 +67,4 @@ extra:
   recipe-maintainers:
     - bubblyorca
     - mxr-conda
+    - zigaluksic
