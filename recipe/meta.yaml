@@ -36,10 +36,10 @@ requirements:
     - requests >=2.27.0
     - requests-oauthlib >=1.0.0
     - shapely
-    - shared-memory38;python_version<"3.8"
+    - shared-memory38;python_version <"3.8"
     - tifffile >=2020.9.30
     - tqdm
-    - typing-extensions;python_version<"3.11"
+    - typing-extensions;python_version <"3.11"
     - utm
     - dataclasses-json
 
