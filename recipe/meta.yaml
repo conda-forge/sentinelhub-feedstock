@@ -9,6 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: cfe05b76644381ba070f7790aece0bdeca5eaa0263b2da7882076f73a60b74c4
 build:
+  noarch: python
   number: 0
   entry_points:
     - sentinelhub=sentinelhub.commands:main_help
@@ -35,10 +36,10 @@ requirements:
     - requests >=2.27.0
     - requests-oauthlib >=1.0.0
     - shapely
-    - shared-memory38  # [py<38]
+    - shared-memory38
     - tifffile >=2020.9.30
     - tqdm
-    - typing-extensions  # [py<311]
+    - typing-extensions
     - utm
     - dataclasses-json
 
