@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - hatchling
 
   run:
     - aenum >=2.1.4
@@ -28,6 +29,7 @@ requirements:
     - botocore
     - click
     - dataclasses-json
+    - hatchling
     - numpy
     - oauthlib
     - pillow >=9.2.0
