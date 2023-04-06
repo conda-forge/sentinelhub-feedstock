@@ -39,7 +39,7 @@ requirements:
     - shapely
     - tifffile >=2020.9.30
     - tomli
-    - tomli_w
+    - tomli-w
     - tqdm
     - typing-extensions
     - utm
