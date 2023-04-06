@@ -1,5 +1,5 @@
 {% set name = "sentinelhub" %}
-{% set version = "3.8.4" %}
+{% set version = "3.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ec1005ac03ce175393a99f66862ef73f56ac9157b121ad3ce4abffa695c13e09
+  sha256: 1b59d1d6accfaa8ee8bf69d6b1d6f75b31996001645b8b4907b02ede160058cf
 build:
   noarch: python
   number: 0
@@ -20,28 +20,31 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
+    - hatchling
 
   run:
     - aenum >=2.1.4
     - boto3
     - botocore
     - click
+    - dataclasses-json
+    - hatchling
     - numpy
     - oauthlib
     - pillow >=9.2.0
     - pyproj >=2.2.0
-    - python >=3.7
+    - python >=3.8
     - python-dateutil
     - requests >=2.27.0
     - requests-oauthlib >=1.0.0
     - shapely
-    - shared-memory38
     - tifffile >=2020.9.30
+    - tomli
+    - tomli-w
     - tqdm
     - typing-extensions
     - utm
-    - dataclasses-json
 
 test:
   imports:

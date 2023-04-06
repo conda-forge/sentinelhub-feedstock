@@ -1,11 +1,11 @@
-About sentinelhub
-=================
+About sentinelhub-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentinelhub-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sentinel-hub/sentinelhub-py
 
 Package license: CC-BY-SA-4.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sentinelhub-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sentinel Hub Utilities
 
