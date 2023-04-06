@@ -20,28 +20,28 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
 
   run:
     - aenum >=2.1.4
     - boto3
     - botocore
     - click
+    - dataclasses-json
     - numpy
     - oauthlib
     - pillow >=9.2.0
     - pyproj >=2.2.0
-    - python >=3.7
     - python-dateutil
     - requests >=2.27.0
     - requests-oauthlib >=1.0.0
     - shapely
-    - shared-memory38
     - tifffile >=2020.9.30
+    - tomli
+    - tomli_w
     - tqdm
     - typing-extensions
     - utm
-    - dataclasses-json
 
 test:
   imports:
