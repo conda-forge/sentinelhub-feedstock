@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 559d03fa8a67255bcf92ac10347386e74e81ca9839b5eccf75b614bd747a752d
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - sentinelhub=sentinelhub.commands:main_help
     - sentinelhub.aws=sentinelhub.aws.commands:aws
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
 
   run:
@@ -34,7 +34,7 @@ requirements:
     - oauthlib
     - pillow >=9.2.0
     - pyproj >=2.2.0
-    - python >=3.8
+    - python >={{ python_min }}
     - python-dateutil
     - requests >=2.27.0
     - requests-oauthlib >=1.0.0
@@ -47,6 +47,8 @@ requirements:
     - utm
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sentinelhub
     - sentinelhub.aws
